@@ -93,23 +93,25 @@ public class KakaoLogin {
 			// clear resources
 		}
 		return returnNode;
-
 	}
 
 	public static UserVO changeData(JsonNode userInfo) {
 		UserVO vo = new UserVO();
 		System.out.println(userInfo);
 		vo.setUser_snsId(userInfo.path("id").asText()); // id -> vo 넣기
-
 //		if (userInfo.path("kaccount_email_verified").asText().equals("true")) { // 이메일 받기 허용 한 경우
 //			vo.setUser_email(userInfo.path("kaccount_email").asText()); // email -> vo 넣기
 
 		JsonNode kakao_account = userInfo.path("kakao_account");
-		System.out.println("kakao_account는?: " + kakao_account
-				);
+		System.out.println("kakao_account는?: " + kakao_account);
+		
+		
+		System.out.println("user gender ============== " + kakao_account.path("gender").asText());
+		
 		if (kakao_account.path("is_email_verified").asText().equals("true")) { // 이메일 받기 허용 한 경우
 			vo.setUser_email(kakao_account.path("email").asText()); // email -> vo 넣기
-		
+			vo.setUser_sex(kakao_account.path("gender").asText());
+
 		} else { // 이메일 거부 할 경우 코드 추후 개발
 
 		}

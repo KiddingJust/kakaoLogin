@@ -9,7 +9,7 @@
 </head>
 <body>
 <form id="actionForm">
-<a id = "kakao-login-btn" href = "https://kauth.kakao.com/oauth/authorize?client_id=8392c8baf0d0c5aa5ba40677ff1e40e2&redirect_uri=http://localhost:8080/kakaologin&response_type=code">
+<a id = "kakao-login-btn" href = "https://kauth.kakao.com/oauth/authorize?client_id=8392c8baf0d0c5aa5ba40677ff1e40e2&redirect_uri=http://localhost:8080/kakaologin&response_type=code&scope=account_email&scope=gender">login
 login
 </a>
 </form>
@@ -17,8 +17,8 @@ login
 <script type='text/javascript' src="webjars/jquery/3.3.1/dist/jquery.min.js"></script>
 <script type='text/javascript'>
   //<![CDATA[
-    // 사용할 앱의 JavaScript 키를 설정해 주세요.
-    Kakao.init('dc56ff6a9fc8065d98b43e87a79e20a4');
+     // 사용할 앱의 JavaScript 키를 설정해 주세요.
+/*     Kakao.init('dc56ff6a9fc8065d98b43e87a79e20a4');
     // 카카오 로그인 버튼을 생성합니다.
     Kakao.Auth.createLoginButton({
       container: '#kakao-login-btn',
@@ -37,7 +37,7 @@ login
       fail: function(err) {
         alert(JSON.stringify(err));
       }
-    });
+    });  */
   //]]>
 </script>
 </script>

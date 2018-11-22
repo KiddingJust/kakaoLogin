@@ -3,15 +3,13 @@ package org.gorany.domain;
 
 import java.util.Date;
 
-import java.util.Date;
-
 public class UserVO {
 	private String user_id;
 	private String user_email;
 	private String user_name;
 	private String user_password;
 	private String user_profileImagePath;
-	private int user_sex;
+	private String user_sex;
 	private String user_birth;
 	private String user_job;
 	private String user_phoneNumber;
@@ -190,10 +188,10 @@ public class UserVO {
 	public void setUser_profileImagePath(String user_profileImagePath) {
 		this.user_profileImagePath = user_profileImagePath;
 	}
-	public int getUser_sex() {
+	public String getUser_sex() {
 		return user_sex;
 	}
-	public void setUser_sex(int user_sex) {
+	public void setUser_sex(String user_sex) {
 		this.user_sex = user_sex;
 	}
 	
