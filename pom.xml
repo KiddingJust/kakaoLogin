@@ -72,6 +72,7 @@
 		    <artifactId>jquery</artifactId>
 		    <version>3.3.1</version>
 		</dependency>
+		
 		<!-- jackson-databind -->
 		<dependency>
 		  <groupId>com.fasterxml.jackson.core</groupId>
@@ -93,26 +94,6 @@
 		  <version>4.5.2</version>
 		</dependency>
 		
-		<!-- Google Login -->
-        <dependency>
-            <groupId>org.springframework.social</groupId>
-            <artifactId>spring-social-google</artifactId>
-            <version>1.0.0.RELEASE</version>
-        </dependency>
- 
-		<!-- https://mvnrepository.com/artifact/com.google.api-client/google-api-client -->
-		<dependency>
-		    <groupId>com.google.api-client</groupId>
-		    <artifactId>google-api-client</artifactId>
-		    <version>1.27.0</version>
-		</dependency>
-
-		<!-- https://mvnrepository.com/artifact/com.google.oauth-client/google-oauth-client-jetty -->
-		<dependency>
-		    <groupId>com.google.oauth-client</groupId>
-		    <artifactId>google-oauth-client-jetty</artifactId>
-		    <version>1.23.0</version>
-		</dependency>
 
 	</dependencies>
 
